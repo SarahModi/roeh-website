@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro'eh | Cloud Security Shepherd</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ro'eh</h2>
+                <span>Cloud Security</span>
+            </div>
+            <div class="nav-links">
+                <a href="#vision">Our Vision</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">The Shepherd for Your <span class="accent">Cloud </span></h1>
+            <p class="hero-subtitle">Guiding businesses through cloud complexity with powerful automation and clear, actionable security.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('vision')">Our Mission</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Ro'eh Promise</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="vision-content">
+                <div class="vision-card neumorphic">
+                    <p>Ro'eh Cloud Security envisions a world where every business, small or large, can operate confidently in the cloud without fear of misconfigurations or hidden vulnerabilities.</p>
+                    <p>Our goal is to become the most trusted and accessible cloud misconfiguration platform, combining powerful automation with clear, actionable guidance.</p>
+                    <p>We aim to simplify cloud security for the modern digital era by offering tools that detect risks early, prevent breaches, and empower companies to manage their cloud environments with total clarity and confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card neumorphic">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Cloud Security Consulting</h3>
+                    <p>Expert guidance to secure your cloud infrastructure, identify misconfigurations, and implement best practices tailored to your business needs.</p>
+                </div>
+                <div class="service-card neumorphic">
+                    <div class="service-icon">🔍</div>
+                    <h3>Security Tools</h3>
+                    <p>Powerful automation tools that continuously monitor your cloud environment, detect risks early, and provide clear, actionable insights.</p>
+                </div>
+                <div class="service-card neumorphic">
+                    <div class="service-icon">🚨</div>
+                    <h3>OSINT Security</h3>
+                    <p>Comprehensive external threat intelligence to identify exposed assets and potential attack vectors before they can be exploited.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to Secure Your Cloud?</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card neumorphic">
+                    <p>Let Ro'eh shepherd your cloud security journey. Contact us to discuss your specific needs and how we can help protect your digital assets.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email:</strong> contact@roeh-security.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Focus:</strong> SMBs & Specific Industries
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ro'eh Cloud Security. Protecting your digital flock.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    </script>
+</body>
+</html>
