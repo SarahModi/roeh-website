@@ -64,24 +64,34 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Changed from 1rem to 0 */
+    padding: 0.5rem 20px; /* CHANGE BACK: 0.5rem vertical, 20px horizontal */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* ADD THIS - fills navbar height */
+    height: 100%; /* KEEP THIS */
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
 }
 
 .nav-logo h2 {
     color: var(--text-primary);
     font-weight: 700;
     font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
 }
 
 .nav-logo span {
     color: var(--accent-blue);
     font-size: 0.8rem;
     font-weight: 500;
-    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
 }
 
 .nav-links {
