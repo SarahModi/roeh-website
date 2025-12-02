@@ -24,6 +24,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 70px; /* ADD THIS LINE - matches navbar height */
 }
 
 .container {
@@ -55,15 +56,19 @@ body {
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    height: 70px; /* ADD THIS */
+    display: flex; /* ADD THIS */
+    align-items: center; /* ADD THIS */
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 20px;
+    padding: 0 20px; /* Changed from 1rem to 0 */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%; /* ADD THIS - fills navbar height */
 }
 
 .nav-logo h2 {
@@ -104,7 +109,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 80px 20px 40px;
+    padding: 90px 20px 40px; /* Increased from 80px to 90px */
     position: relative;
     overflow: hidden;
 }
@@ -365,7 +370,7 @@ section {
 /* === INNER PAGES === */
 .page-hero {
     background: linear-gradient(135deg, var(--matte-bg) 0%, #1e2126 100%);
-    padding: 140px 0 60px;
+    padding: 90px 0 60px; /* Reduced from 140px to 90px */
     text-align: center;
     border-bottom: 1px solid var(--matte-border);
 }
