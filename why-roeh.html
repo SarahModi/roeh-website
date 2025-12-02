@@ -1,138 +1,117 @@
-/* === INNER PAGES === */
-.page-hero {
-    background: linear-gradient(135deg, var(--matte-bg) 0%, #1e2126 100%);
-    padding: 140px 0 60px;
-    text-align: center;
-    border-bottom: 1px solid var(--matte-border);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Ro'eh | Cloud Security Shepherd</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <h2>Ro'eh</h2>
+                <span>Cloud Security</span>
+            </a>
+            <div class="nav-links">
+                <a href="why-roeh.html">Why Ro'eh</a>
+                <a href="products.html">Products</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-.page-hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Why Ro'eh?</h1>
+            <p>Discover what makes Ro'eh the trusted shepherd for your cloud security journey</p>
+        </div>
+    </section>
 
-.page-hero p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-}
+    <!-- Main Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- The Shepherd Difference -->
+            <div class="content-card neumorphic">
+                <h2>The Shepherd Difference</h2>
+                <p>Traditional security tools leave you with alerts. Ro'eh provides <strong>guidance</strong>. We don't just point out problems—we walk you to the solution, ensuring you understand and can prevent future issues.</p>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <div class="feature-icon">👁️</div>
+                        <h3>Complete Visibility</h3>
+                        <p>See your entire cloud environment through the eyes of a security expert. No blind spots, no hidden risks.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Actionable Intelligence</h3>
+                        <p>Receive clear, prioritized steps—not overwhelming alerts. Know exactly what to fix first and why.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Proactive Protection</h3>
+                        <p>Prevent breaches before they happen. Our tools detect misconfigurations and vulnerabilities in real-time.</p>
+                    </div>
+                </div>
+            </div>
 
-.page-content {
-    padding: 80px 0;
-}
+            <!-- For SMBs & Startups -->
+            <div class="content-card neumorphic">
+                <h2>Built for SMBs & Startups</h2>
+                <p>Most security platforms are designed for enterprises with dedicated security teams. Ro'eh is built for <strong>growing businesses</strong> that need enterprise-grade security without the complexity or cost.</p>
+                <ul class="benefits-list">
+                    <li>✅ <strong>No security expertise required</strong> - We guide you every step</li>
+                    <li>✅ <strong>Transparent pricing</strong> - No hidden fees or surprise charges</li>
+                    <li>✅ <strong>Fast deployment</strong> - Get protected in hours, not weeks</li>
+                    <li>✅ <strong>Scalable</strong> - Grows with your business, from startup to enterprise</li>
+                </ul>
+            </div>
 
-.content-card {
-    padding: 3rem;
-    margin-bottom: 2rem;
-}
+            <!-- Our Vision Card -->
+            <div class="content-card neumorphic vision-highlight">
+                <h2>Our Guiding Vision</h2>
+                <p><em>"Ro'eh Cloud Security envisions a world where every business, small or large, can operate confidently in the cloud without fear of misconfigurations or hidden vulnerabilities."</em></p>
+                <p>This vision drives everything we do. We're not just another security vendor—we're your partner in building a secure, resilient cloud foundation.</p>
+            </div>
+        </div>
+    </section>
 
-.content-card h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-}
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card neumorphic">
+                <h2>Ready to Experience the Ro'eh Difference?</h2>
+                <p>Join the businesses that have transformed their cloud security with our shepherd approach.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="products.html" class="btn btn-secondary">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.content-card p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ro'eh Cloud Security. Protecting your digital flock.</p>
+        </div>
+    </footer>
 
-/* Feature Grid */
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.feature {
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--accent-blue), #5a9cff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.feature h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-}
-
-/* Benefits List */
-.benefits-list {
-    list-style: none;
-    margin: 1.5rem 0;
-}
-
-.benefits-list li {
-    padding: 0.8rem 0;
-    color: var(--text-secondary);
-    border-bottom: 1px solid var(--matte-border);
-}
-
-.benefits-list li:last-child {
-    border-bottom: none;
-}
-
-/* Vision Highlight */
-.vision-highlight {
-    border-left: 4px solid var(--accent-blue);
-    background: rgba(58, 134, 255, 0.05);
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 60px 0;
-    background: rgba(255,255,255,0.02);
-}
-
-.cta-card {
-    padding: 3rem;
-    text-align: center;
-}
-
-.cta-card h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-}
-
-.cta-card p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Active Navigation */
-.nav-links a.active {
-    color: var(--accent-blue);
-    font-weight: 600;
-    position: relative;
-}
-
-.nav-links a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--accent-blue);
-}
+    <script>
+        // Simple active nav highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
