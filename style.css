@@ -776,11 +776,31 @@ section {
 }
 
 .solution-features li {
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     color: var(--text-secondary);
     border-bottom: 1px solid rgba(255,255,255,0.05);
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
+    line-height: 1.6;
+    display: block; /* ADD THIS - makes each li take full width */
+}
+
+.solution-features li:last-child {
+    border-bottom: none;
+}
+
+.solution-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.solution-features strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .solution-features li:last-child {
