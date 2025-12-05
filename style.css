@@ -730,6 +730,238 @@ section {
     line-height: 1.7;
 }
 
+/* === SOLUTIONS PAGE === */
+.solutions-overview {
+    padding: 80px 0;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.solution-card {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.solution-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--accent-blue), #5a9cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solution-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.solution-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.solution-features {
+    list-style: none;
+    margin: 1.5rem 0;
+    flex-grow: 1;
+}
+
+.solution-features li {
+    padding: 0.6rem 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.solution-features li:last-child {
+    border-bottom: none;
+}
+
+.solution-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: bold;
+}
+
+.solution-features strong {
+    color: var(--text-primary);
+}
+
+.solution-cta {
+    margin-top: 1.5rem;
+}
+
+/* Industry Solutions */
+.industry-solutions {
+    padding: 80px 0;
+    background: rgba(255,255,255,0.02);
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.industry-card {
+    padding: 2rem;
+}
+
+.industry-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.industry-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.industry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: rgba(58, 134, 255, 0.1);
+    color: var(--accent-blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(58, 134, 255, 0.3);
+}
+
+/* Service Packages */
+.service-packages {
+    padding: 80px 0;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.package-card {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.package-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--matte-border);
+}
+
+.package-header h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.package-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+.package-card > p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.package-features {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.package-features li {
+    padding: 0.6rem 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.package-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-size: 1.2rem;
+}
+
+/* Case Study */
+.case-study {
+    padding: 80px 0;
+    background: rgba(255,255,255,0.02);
+}
+
+.case-study-card {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.case-study-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.case-study-content > p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.case-study-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--matte-border);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
     .nav-container {
